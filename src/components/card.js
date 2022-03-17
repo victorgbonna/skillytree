@@ -1,5 +1,5 @@
 2
-export default function Card() {
+export default function Card({stylebtmCirc}) {
   return (
     <div className="carddiv">
         <svg className="circletop" width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +11,7 @@ export default function Card() {
             </linearGradient>
             </defs>
         </svg>
-        <svg className="circlebtm" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {stylebtmCirc=='small'?<svg className="circlebtm" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M37.4534 1.18455C54.4302 4.20964 65.7402 20.4243 62.7151 37.4011C59.69 54.3778 43.4754 65.6878 26.4986 62.6628C9.52189 59.6377 -1.78816 43.423 1.23692 26.4463C4.262 9.46953 20.4767 -1.84053 37.4534 1.18455Z" fill="url(#paint0_linear_2_53)" fillOpacity="0.56"/>
             <defs>
             <linearGradient id="paint0_linear_2_53" x1="-28.1581" y1="45.209" x2="14.4783" y2="-21.8871" gradientUnits="userSpaceOnUse">
@@ -19,7 +19,7 @@ export default function Card() {
             <stop offset="1" stopColor="#FDA02F"/>
             </linearGradient>
             </defs>
-        </svg>
+        </svg>:
         <svg className="circlebtm2" width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M52.1908 0.842948C76.2918 5.13751 92.3481 28.1567 88.0536 52.2577C83.759 76.3588 60.7398 92.4151 36.6388 88.1205C12.5378 83.826 -3.51857 60.8068 0.77599 36.7058C5.07055 12.6047 28.0897 -3.45161 52.1908 0.842948Z" fill="url(#paint0_linear_2_54)" fillOpacity="0.56"/>
             <defs>
@@ -28,7 +28,7 @@ export default function Card() {
             <stop offset="1" stopColor="#FDA02F"/>
             </linearGradient>
             </defs>
-        </svg>
+        </svg>}
         <div className="card">
             <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M10.1005 17.3808C14.4194 17.3808 17.9206 13.8796 17.9206 9.56069C17.9206 5.24177 14.4194 1.7406 10.1005 1.7406C5.78157 1.7406 2.2804 5.24177 2.2804 9.56069C2.2804 13.8796 5.78157 17.3808 10.1005 17.3808ZM10.1005 18.6841C15.1392 18.6841 19.2239 14.5994 19.2239 9.56069C19.2239 4.52196 15.1392 0.437256 10.1005 0.437256C5.06175 0.437256 0.977051 4.52196 0.977051 9.56069C0.977051 14.5994 5.06175 18.6841 10.1005 18.6841Z" fill="white"/>

@@ -28,8 +28,8 @@ export default function MainContent() {
                 <small>Edit</small> 
               </div>
               <div className="cardgrid">
-                <Card/>
-                <Card/>
+                <Card stylebtmCirc="large"/>
+                <Card stylebtmCirc="small"/>
               </div>              
           </div>
           <div className='otherpay'>
